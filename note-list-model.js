@@ -1,14 +1,23 @@
-(function (exports){
-  var listStore = ["one"]
-    function noteList() {
-      return listStore;
-    };
+(function (exports) {
+  function List() {
+    this.storeNotes = [];
+  };
 
-  exports.noteList = noteList;
-  exports.listStore = listStore
+  List.prototype.listOfNotes = function() {
+    return this.storeNotes;
+  }
+
+
+
+
+
+  exports.List = List;
 })(this);
 
-console.log(noteList());
+/////////////////
+  var list = new List;
+  list.listOfNotes();
+
 
 (function (exports){
   function createNote(string) {
@@ -21,8 +30,8 @@ console.log(createNote("Favourite drink: seltzer"));
 
 (function (exports){
   function addnote(string){
-    listStore.push(string)
-    return listStore
+    storeNotes.push(string)
+    return storeNotes
   };
   exports.addnote = addnote;
 })(this);
