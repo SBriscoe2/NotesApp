@@ -29,7 +29,8 @@ console.log(createNote("Favourite drink: seltzer"));
 
 console.log(addnote("howdy"));
 
-// var Notes = function() {
+// function Notes(text) {
+//   this.text = text
 //   this.StoreNotes = [];
 // };
 //
