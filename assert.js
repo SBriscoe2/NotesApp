@@ -8,8 +8,8 @@
 var assert = {
   isTrue: function(assertionToCheck) {
     if (!assertionToCheck) {
-      throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
+      throw new Error("Test failed: " + assertionToCheck + " is not truthy");
     } else {
-      console.log("this test has passed")}
+      console.log("Test has passed")}
   }
 };
