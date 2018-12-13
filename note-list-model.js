@@ -17,8 +17,9 @@
 })(this);
 
 // console tests
-  var list = new List();
   var notes = new Note();
+  var list = new List();
+
   // list.listOfNotes();
   list.addNote("Favourite drink: seltzer");
   list.addNote("Favourite food: pizza");

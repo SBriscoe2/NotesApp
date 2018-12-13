@@ -1,18 +1,13 @@
 (function (exports) {
-    var documentId = document.getElementById(string)
-      function changeText(){
-        return documentId(string).innerHTML = "Howdy World";
-      };
-})(this);
-console.log(documentId("app"));
+  function Text() {
+  };
 
-// (function (exports){
-//   var listStore = ["one"]
-//     function noteList() {
-//       return listStore;
-//     };
-//
-//   exports.noteList = noteList;
-//   exports.listStore = listStore
-// })(this);
-//
+  Text.prototype.changeText = function(text) {
+    var documentId = document.getElementById("app");
+    var change = document.getElementById("app").innerHTML = "Howdy World";  
+  }
+  exports.Text = Text;
+})(this);
+
+var greeting = new Text();
+greeting.changeText();
