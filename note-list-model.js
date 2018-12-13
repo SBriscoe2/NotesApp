@@ -8,7 +8,7 @@
      return this.storeNotes;
    }
 
-  List.prototype.addnote = function(text) {
+  List.prototype.addNote = function(text) {
     var notes = new Note(text);
     this.storeNotes.push(notes);
   }
@@ -19,11 +19,7 @@
 // console tests
   var list = new List();
   var notes = new Note();
+  // list.listOfNotes();
+  list.addNote("Favourite drink: seltzer");
+  list.addNote("Favourite food: pizza");
   list.listOfNotes();
-  list.addnote("Favourite drink: seltzer");
-  list.listOfNotes();
-
-  // List.prototype.createNote = function(string) {
-  //
-  //   return this.string
-  // }

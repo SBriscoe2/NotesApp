@@ -13,7 +13,7 @@
 // var list = List();
 // list.listOfNotes();
 var list = new List();
-list.addnote("Favourite drink: seltzer");
+list.addNote("Favourite drink: seltzer");
 var result = new HtmlList();
 result.convertList();
 console.log(result.comList);
