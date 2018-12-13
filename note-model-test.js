@@ -12,8 +12,7 @@ listsStoredNotes();
 
 function addNote() {
   var list = new List();
-  var add = list.addNote("Favourite dish: pasta");
-  list.addNote(add)
-  assert.isTrue(list.listOfNotes() === ["Favourite dish: pasta"]);
+  list.addNote("Favourite dish: pasta");
+  assert.isTrue(list.listOfNotes()) === "Favourite dish: pasta";
 }
 addNote();
