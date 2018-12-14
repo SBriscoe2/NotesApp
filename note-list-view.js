@@ -13,7 +13,7 @@
       var ans = document.createElement('ul');
       for (var i = 0; i < array.length; i++) {
           var item = document.createElement('li');
-          item.appendChild(document.createTextNode(array[i]));
+          item.appendChild(document.createTextNode(array[i].text));
           ans.appendChild(item);
       }
       return ans;
@@ -27,9 +27,10 @@ var list = new List();
 var notes = new Note();
 list.addNote("Favourite drink: seltzer");
 list.addNote("Favourite food: pizza");
-console.log(list.listOfNotes());
+var array = list.listOfNotes();
+// console.log(list.listOfNotes());
 var entry = new HtmlList();
-entry.convertList(list.listOfNotes());
+entry.convertList(array);
 
 // console.log(html.comList);
 
